@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Alex Lo</title>
+</head>
+<body>
+    <div class="nav-wraper">
+        <nav id="nav">
+            <div class="logo">
+                <h4><a href="index.html">alex lo</a></h4>
+            </div>
+            <ul class="nav-links">
+                <li style="margin-right: 5%;"><a href="index.html">design</a></li>
+                <li style="margin-right: 5%;"><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="top-container">
+        <div class="hello">hey, I'm alex</div>
+            <hr color="black" noshade="left" style="width:30%;">
+        <div class="intro-text">desiginng with a passion for sustainably and usability facing food instablity
+            <img src="emoji.jpeg" class="foodEmoji">
+        </div>
+    </div>
+
+    
+    <div class="first-body-container"> 
+        <div id="fade-in-picture1" class="first-body-image-container">
+            <img src="hiking2.jpeg" class="first-image">
+        </div>
+        <div id="fade-in-text1" class="first-body-text-container">
+            <div class="first-body-text-alignment-container">
+                <div class="first-body-text-title">Find me outside.</div>
+                    <hr color="black" noshade="left" style="width:70%; margin-top:1vh">
+                <button class="first-body-button">Check me out</button>
+            </div>
+        </div>
+    </div>
+
+    <div class ="spacer" style="height:10vw;background-color: #363333;"></div>
+
+    <div class="second-body-container"> 
+        <div id="fade-in-picture2" class="second-body-image-container">
+            <img src="fencing.jpg" class="second-image">
+        </div>
+        <div id="fade-in-text2" class="second-body-text-container">
+            <div class="second-body-text-alignment-container">
+                <div class="second-body-text-title">Otherwise on the strip.</div>
+                    <hr color="black" noshade="left" style="width:70%; margin-top:1vh">
+                <button class="second-body-button">Check me out</button>
+            </div>
+        </div>
+    </div>
+
+    <div class ="spacer" style="height:10vw;background-color: #363333;"></div>
+    
+    <footer>
+        <div><a href="" id="name">Alex Lo</a></div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/alex.lo.96155" target="_blank" id = "facebook" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/alexlo_1/" target="_blank" id = "facebook" class="fa fa-instagram"></a>
+            <a href="#" target="_blank" class="fa fa-linkedin"></a>
+        </div>
+        <div class="email">alo188@comcast.net</div>
+    </footer>
+</body>
+<script src="jquery-3.5.1.js"></script>
+<script src="script.js"></script>
+<script>
+    var height=screen.height;
+    $(function(){
+      var element = $('#fade-in-picture1');
+      element.hide();
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > .5*height) {
+          element.fadeIn(1000);
+        }
+        else {
+          element.fadeOut();
+        }
+       });
+    })
+
+    $(function(){
+      var element = $('#fade-in-text1');
+      element.hide();
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > .5*height) {
+          element.fadeIn(700);
+        }
+        else {
+          element.fadeOut();
+        }
+       });
+    })
+    
+
+    $(function(){
+        var element=$('#fade-in-picture2');
+        element.hide();
+        $(window).scroll(function(){
+            if ($(this).scrollTop()>1.2*height){
+                element.fadeIn(1000);
+            }
+            else{
+                element.fadeOut();
+            }
+        });
+    })
+    
+    $(function(){
+        var element=$('#fade-in-text2');
+        element.hide();
+        $(window).scroll(function(){
+            if ($(this).scrollTop()>1.2*height){
+                element.fadeIn(700);
+            }
+            else{
+                element.fadeOut();
+            }
+        });
+    })
+</script>
+</html>
