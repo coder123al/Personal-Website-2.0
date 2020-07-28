@@ -23,3 +23,59 @@ btt.addEventListener("click", function(event){
     event.preventDefault();
     docElem.scrollTop=0;
 });
+
+//fade in's
+
+var height=screen.height;
+    $(function(){
+      var element = $('#fade-in-picture1');
+      element.hide();
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > .5*height) {
+          element.fadeIn(1000);
+        }
+        else {
+          element.fadeOut();
+        }
+       });
+    })
+
+    $(function(){
+      var element = $('#fade-in-text1');
+      element.hide();
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > .5*height) {
+          element.fadeIn(700);
+        }
+        else {
+          element.fadeOut();
+        }
+       });
+    })
+    
+
+    $(function(){
+        var element=$('#fade-in-picture2');
+        element.hide();
+        $(window).scroll(function(){
+            if ($(this).scrollTop()>1.2*height){
+                element.fadeIn(1000);
+            }
+            else{
+                element.fadeOut();
+            }
+        });
+    })
+    
+    $(function(){
+        var element=$('#fade-in-text2');
+        element.hide();
+        $(window).scroll(function(){
+            if ($(this).scrollTop()>1.2*height){
+                element.fadeIn(700);
+            }
+            else{
+                element.fadeOut();
+            }
+        });
+    })
