@@ -142,6 +142,11 @@ body{
     font-family: 'Playfair Display', serif;
 }
 
+.first-body-button a{
+    color: white;
+    text-decoration:none;
+}
+
 /*second body stuff*/
 .second-body-container{
     height:100vh;
@@ -189,6 +194,10 @@ body{
     font-family: 'Playfair Display', serif;
 }
 
+.second-body-button a{
+    color: white;
+    text-decoration:none;
+}
 
 
 /*footer*/
